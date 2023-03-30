@@ -1,17 +1,19 @@
 
+ //exercicio 01
 package listaone;
 
-
+//classe
 public class Pessoa {
     public static void main (String []args){
  
     
-    //exercicio 01
+   // atributos
     private String CPF;
     private String Nome;
     private char Sexo;
     private int Idade;
 
+        //set
     public void setCPF(String CPF) {
         this.CPF = CPF;
     }
@@ -24,6 +26,8 @@ public class Pessoa {
         this.Idade = Idade;
     }
 
+        
+        // get
     public String getCPF() {
         return CPF;
     }
@@ -39,8 +43,15 @@ public class Pessoa {
     public int getNome() {
         return Idade;
     }
-
     
+    // IMPRIMIR
+    public String imprimir(){
+      return Pessoa;
+                      
+    }             
+                          
+
+    //metodos
  public String CriarPessoa(Pessoa p){
         //System.out.println("Qual é o seu nome?");
         //System.out.println("Meu nome é "+p.nome);
@@ -53,6 +64,11 @@ public class Pessoa {
     public String MostreAPessoa(){
         //System.out.println("Meu nome é "+nome);
         return "A pessoa é "+ Nome;
+    }
+    
+     public String Sair(){
+     
+        return "Pessoa criada "+ Nome;
     }
 
  
