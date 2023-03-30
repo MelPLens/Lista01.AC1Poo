@@ -1,13 +1,20 @@
-import java.util.Scanner;
+// Exercicio 3
+package listaone;
 
+//classe
 public class Funcionario {
+    
+
+    // atributos
     private int cracha;
     private String nome;
-    private char tipovinculo;
-    private float valorhora;
-    private float qtadeHora;
-    private float salario;
-    private float valorDesconto;
+    private char Tipovinculo;
+    private float valorHora;
+    private float QtadeHora;
+    private float Salario;
+    private float ValorDesconto;
+    
+    // set e get cracha
     
     public int getCracha() {
         return cracha;
@@ -17,6 +24,7 @@ public class Funcionario {
         this.cracha = cracha;
     }
     
+    // get e set nome
     public String getNome() {
         return nome;
     }
@@ -25,45 +33,107 @@ public class Funcionario {
         this.nome = nome;
     }
     
+    
+    // get e set tipovinculo
     public char getTipovinculo() {
-        return tipovinculo;
+        return Tipovinculo;
     }
     
     public void setTipovinculo(char tipovinculo) {
-        this.tipovinculo = tipovinculo;
+        this.Tipovinculo = tipovinculo;
     }
     
-    public float getValorhora() {
+    //get e set valorhora
+    public float getvalorhora(float valorhora) {
         return valorhora;
     }
     
-    public void setValorhora(float valorhora) {
-        this.valorhora = valorhora;
+    public float setvalorhora(float valorhora) {
+       return valorhora;
     }
     
+    //get e set Qtadedehhora
     public float getQtadeHora() {
-        return qtadeHora;
+        return QtadeHora;
     }
     
     public void setQtadeHora(float qtadeHora) {
-        this.qtadeHora = qtadeHora;
+        this.QtadeHora = qtadeHora;
     }
     
+    
+    //get e set salario
     public float getSalario() {
-        return salario;
+        return Salario;
     }
     
     public void setSalario(float salario) {
-        this.salario = salario;
+        this.Salario = salario;
     }
     
+    
+    //get e set Valordesconto
     public float getValorDesconto() {
-        return valorDesconto;
+           return ValorDesconto;
     }
     
-    public void setValorDesconto(float valorDesconto) {
-        this.valorDesconto = valorDesconto;
+    public float setValorDesconto() {
+        return ValorDesconto;
     }
     
-    public void calcularValorSalario(float valorHora, float qtadeHora) {
-        float salario = // continuar a codar
+    
+    //metodo
+    public float calcularValorSalario(){
+         if ( Tipovinculo="H"){
+    
+            return valorHora * QtadeHora-ValorDesconto;
+        
+        else
+            return Salario-ValorDesconto;
+     
+         }
+    
+            
+             // METODO - IMPRIMIR
+                 public String imprimir(){
+                 return "Cracha : " + cracha +
+                 "\nNome :" + nome+
+                 "\nTipo Vinculo :" + Tipovinculo+
+                 "\nSalario :" +  if ( Tipovinculo=""){
+    
+            return valorHora * QtadeHora-ValorDesconto;
+        
+        else
+            return Salario;+
+                    
+                 "\nDesconto :" + ValorDesconto+
+                 "\nValor a receber :" + calcularValorSalario;
+                
+      }
+    
+        public String CriarPessoa(Funcionario f){
+     
+        String retorno = "";
+        retorno += "Crie uma pessoa";
+        retorno += f.MostreAPessoa();
+        return retorno;
+    }
+    public String Folhadepagamento(){
+        
+        return "Folha de pagamento "+ calcularValorSalario;
+    }
+        public String Alteraremuneracao(){
+        
+        return "Altear folha de pagamento" + Salario +ValorHora;
+    }
+        
+        
+     public String Sair(){
+     
+        return "Funcionario criado" + nome;
+    }
+
+ 
+}
+
+    
