@@ -4,6 +4,8 @@ package listaone;
 //classe
 public class Funcionario {
     
+     public static void main(String[] args) {
+    }
 
     // atributos
     private int cracha;
@@ -101,13 +103,11 @@ public class Funcionario {
                  "\nTipo Vinculo :" + Tipovinculo+
                  "\nSalario :" +  if ( Tipovinculo=""){
     
-            return valorHora * QtadeHora-ValorDesconto;
-        
-        else
-            return Salario;+
-                    
-                 "\nDesconto :" + ValorDesconto+
-                 "\nValor a receber :" + calcularValorSalario;
+                         return valorHora * QtadeHora-ValorDesconto;
+                         else
+                         return Salario;+   
+                        "\nDesconto :" + ValorDesconto+
+                        "\nValor a receber :" + calcularValorSalario;
                 
       }
     
@@ -128,12 +128,12 @@ public class Funcionario {
     }
         
         
-     public String Sair(){
+        public String Sair(){
      
         return "Funcionario criado" + nome;
     }
-
- 
 }
+
+    
 
     
