@@ -1,8 +1,10 @@
 // Exercicio 3
 package listaone;
 
-//classe
+
 public class Funcionario {
+    // Exercicio 3
+
     
      public static void main(String[] args) {
     }
@@ -86,22 +88,23 @@ public class Funcionario {
     
     //metodo
     public float calcularValorSalario(){
-         if ( Tipovinculo="H"){
-    
-            return valorHora * QtadeHora-ValorDesconto;
-        
+
+        if (Tipovinculo="H") {
+            return valorHora * QtadeHora-ValorDesconto;        
         else
             return Salario-ValorDesconto;
      
+            
          }
+    
     
             
              // METODO - IMPRIMIR
-                 public String imprimir(){
-                 return "Cracha : " + cracha +
-                 "\nNome :" + nome+
-                 "\nTipo Vinculo :" + Tipovinculo+
-                 "\nSalario :" +  if ( Tipovinculo=""){
+               public String criarPessoa(Funcionario f) {
+               String retorno = "";
+               retorno += "Criando uma pessoa\n";
+               retorno += f.imprimir();
+               return retorno;
     
                          return valorHora * QtadeHora-ValorDesconto;
                          else
@@ -115,16 +118,16 @@ public class Funcionario {
      
         String retorno = "";
         retorno += "Crie uma pessoa";
-        retorno += f.MostreAPessoa();
+        retorno += f.funcionario();
         return retorno;
     }
-    public String Folhadepagamento(){
+        public String Folhadepagamento(){
         
-        return "Folha de pagamento "+ calcularValorSalario;
+        return "Folha de pagamento "+ Salario;
     }
         public String Alteraremuneracao(){
         
-        return "Altear folha de pagamento" + Salario +ValorHora;
+        return "Altear folha de pagamento" + Salario +valorHora;
     }
         
         
@@ -135,5 +138,6 @@ public class Funcionario {
 }
 
     
+
 
     
