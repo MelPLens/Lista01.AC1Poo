@@ -1,9 +1,9 @@
-//EXERCICIO 2
+
 package listaone;
 
 
-    //classe
-    public class Aluno {
+public class Aluno {
+
 
     public static void main(String[] args) {
     }
@@ -15,6 +15,8 @@ package listaone;
     private float AC2;
     private float AG;
     private float AF;
+    int media;
+    int aprovacao;
     
     
      //RA - SET e GET
@@ -94,9 +96,11 @@ package listaone;
      // METODO - VERIFICAR
      public float verificarAprovacao(){
         if ( calcularMedia()>=5)
-            return "Aprovado"; 
+           System.out.println("Aluno Reprovado");
         else
-            return "Reprovado";
+           System.out.println("Aluno Reprovado");
+        
+        return 0;
      
       }
     
@@ -108,9 +112,7 @@ package listaone;
                  "\nAC2 :" + AC1+
                  "\nAG :" + AG+
                  "\nAF :" + AF+
-                 "\nCalcularmedia :" + Calcularmedia+
-                 "\nVerificaraprovacao :" + Verificaraprovacao+
+                 "\nCalcularmedia :" + media+
+                 "\nVerificaraprovacao :" + aprovacao+
                       
     
-}
-    }
