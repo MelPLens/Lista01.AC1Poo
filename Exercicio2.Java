@@ -84,8 +84,7 @@ package listaone;
      }
 
     
-   
-    
+
      // METODO - CALCULAR MEDIA
      public float calcularMedia(){
         return  (AC1 * 0.15f) + (AC2 *0.30f) + (AG * 0.10f) + (AF * 0.45f); // numeros sao double(numero flutuante) mas para retornar um floar (float) ou 0.30f
@@ -94,12 +93,11 @@ package listaone;
     
      // METODO - VERIFICAR
      public float verificarAprovacao(){
-        if ( calcularMedia()>=5){
-            return "Aprovado";
-        
+        if ( calcularMedia()>=5)
+            return "Aprovado"; 
         else
             return "Reprovado";
-        
+     
       }
     
       // IMPRIMIR
